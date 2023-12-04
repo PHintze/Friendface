@@ -5,6 +5,7 @@
 //  Created by Pascal Hintze on 30.11.2023.
 //
 
+import SwiftData
 import SwiftUI
 
 struct Response: Codable {
@@ -12,7 +13,9 @@ struct Response: Codable {
 }
 
 struct ContentView: View {
-    @State private var users = [User]()
+    @Environment (\.modelContext) var modelContext
+    @Query(sort: \User.name) private var users: [User]
+    
     
     var body: some View {
         NavigationStack {
@@ -44,7 +47,15 @@ struct ContentView: View {
             // users = try JSONDecoder().decode([User].self, from: data)
             // is not working
             decoder.dateDecodingStrategy = .iso8601
-            users = try decoder.decode([User].self, from: data)
+            
+            let downloadedUsers = try decoder.decode([User].self, from: data)
+            let insertContext = ModelContext(modelContext.container)
+            
+            for user in downloadedUsers {
+                insertContext.insert(user)
+            }
+            
+            try insertContext.save()
         } catch {
             print("Invalid data")
         }

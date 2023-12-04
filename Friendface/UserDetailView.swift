@@ -69,6 +69,6 @@ struct UserDetailView: View {
     
 }
 
-#Preview {
-    UserDetailView(user: User(id: "1", isActive: true, name: "Peter Pan", age: 10, company: "Blackrock", email: "peter.pan@mail.com", address: "Street 1, London", about: "Peter Pan is a comic character in a disney movie", registered: .now, tags: ["friendly", "funny"], friends: [User.Friend(id: "2", name: "Lilly Fee"), User.Friend(id: "3", name: "Captain Hook")]))
-}
+//#Preview {
+//    UserDetailView(user: User(id: "1", isActive: true, name: "Peter Pan", age: 10, company: "Blackrock", email: "peter.pan@mail.com", address: "Street 1, London", about: "Peter Pan is a comic character in a disney movie", registered: .now, tags: ["friendly", "funny"], friends: [User.Friend(id: "2", name: "Lilly Fee"), User.Friend(id: "3", name: "Captain Hook")]))
+//}

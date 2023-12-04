@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D878E8582B1E005C007807EE /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = D878E8572B1E005C007807EE /* Friend.swift */; };
 		D8BC40112B18612300215769 /* FriendfaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BC40102B18612300215769 /* FriendfaceApp.swift */; };
 		D8BC40132B18612300215769 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BC40122B18612300215769 /* ContentView.swift */; };
 		D8BC40152B18612400215769 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8BC40142B18612400215769 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D878E8572B1E005C007807EE /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		D8BC400D2B18612300215769 /* Friendface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Friendface.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8BC40102B18612300215769 /* FriendfaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendfaceApp.swift; sourceTree = "<group>"; };
 		D8BC40122B18612300215769 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				D8BC40102B18612300215769 /* FriendfaceApp.swift */,
 				D8BC40122B18612300215769 /* ContentView.swift */,
 				D8BC401E2B18616800215769 /* User.swift */,
+				D878E8572B1E005C007807EE /* Friend.swift */,
 				D8BC40202B18717700215769 /* UserDetailView.swift */,
 				D8BC40222B187F4200215769 /* RectangleDivider.swift */,
 				D8BC40142B18612400215769 /* Assets.xcassets */,
@@ -149,6 +152,7 @@
 				D8BC40212B18717700215769 /* UserDetailView.swift in Sources */,
 				D8BC40132B18612300215769 /* ContentView.swift in Sources */,
 				D8BC40112B18612300215769 /* FriendfaceApp.swift in Sources */,
+				D878E8582B1E005C007807EE /* Friend.swift in Sources */,
 				D8BC401F2B18616800215769 /* User.swift in Sources */,
 				D8BC40232B187F4200215769 /* RectangleDivider.swift in Sources */,
 			);
